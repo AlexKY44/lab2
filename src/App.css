@@ -1,8 +1,8 @@
 .profiles-container {
   display: flex;
-  flex-wrap: wrap;          /* дозволяє переноситись на новий ряд */
-  justify-content: center;  /* центрує картки по горизонталі */
-  gap: 24px;                /* відстань між картками */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
   margin-top: 20px;
 }
 
@@ -11,19 +11,26 @@
   border-radius: 12px;
   padding: 16px;
   text-align: center;
-  width: 200px;             /* зробимо картку ширшою */
+  width: 200px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  background-color: #fff;   /* щоб виглядало як «карточка» */
+  background-color: #fff;
   transition: transform 0.2s ease;
 }
 
 .profile-card:hover {
-  transform: scale(1.05);   /* анімація при наведенні */
+  transform: scale(1.05);
 }
 
 .profile-card img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  object-fit: cover;        /* щоб картинка не сплющувалась */
+  object-fit: cover;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }

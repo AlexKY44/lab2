@@ -1,4 +1,6 @@
 import Profile from "./Profile";
+import './App.css';
+
 
 function App() {
   const users = [
